@@ -129,9 +129,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Neuron.h" />
+    <ClInclude Include="include\Neuron.h" />
+    <ClInclude Include="NeuralNetwork.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="NeuralNetwork.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

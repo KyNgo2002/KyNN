@@ -1,12 +1,15 @@
 #pragma once
 #include <functional>
+#include <vector>
 
 class Neuron {
-	int m_bias;
-	std::function<double(double)> activationFunction;
-	
-	Neuron(std::function<double(double)> activationFunction) {
+public:
+	int m_bias;												// Neuron bias
+	std::function<double(double)> m_activationFunction;		// Neuron activation function
+	std::vector<int> weights;								// Input weights
+
+	Neuron(size_t inputCount) {
 		this->m_bias = 0;
-		this->activationFunction = activationFunction;
+		weights.resize(inputCount);
 	}
 };
