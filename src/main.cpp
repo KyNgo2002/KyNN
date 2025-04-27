@@ -1,6 +1,8 @@
 #include <iostream>
 #include <Eigen/Dense>
 
+#include "../include/Neuron.h"
+
 using Eigen::MatrixXd;
 
 int main() {
@@ -10,7 +12,6 @@ int main() {
 	m(0, 1) = -1;
 	m(1, 1) = m(1, 0) + m(0, 1);
 	std::cout << m << std::endl;
-	std::cout << "Hello world" << std::endl;
 
 	return 0;
 }
