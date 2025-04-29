@@ -8,9 +8,13 @@ public:
 	std::function<double(double)> m_activationFunction;		// Neuron activation function
 	std::vector<int> weights;								// Input weights
 
+public:
+	// Default constructor -> lone neuron
 	Neuron() {
 		this->m_bias = 0;
 	}
+
+	// Constructor -> neuron with inputs 
 	Neuron(size_t inputCount) {
 		this->m_bias = 0;
 		weights.resize(inputCount);
