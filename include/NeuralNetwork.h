@@ -1,6 +1,7 @@
 #pragma once
 #include "Neuron.h"
 #include <vector>
+#include <stdexcept>
 
 class NeuralNetwork {
 public:

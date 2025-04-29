@@ -1,7 +1,7 @@
 #include <iostream>
 #include <Eigen/Dense>
 
-#include "../include/Neuron.h"
+#include "../include/NeuralNetwork.h"
 
 using Eigen::MatrixXd;
 

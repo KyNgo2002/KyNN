@@ -130,10 +130,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="include\Neuron.h" />
-    <ClInclude Include="NeuralNetwork.h" />
+    <ClInclude Include="include\NeuralNetwork.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="NeuralNetwork.cpp" />
+    <ClCompile Include="src\NeuralNetwork.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
